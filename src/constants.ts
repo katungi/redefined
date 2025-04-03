@@ -1,4 +1,4 @@
 export const blogDescription =
-	"A blog about open source, static analysis, and web dev.";
+	"A blog about random things, life , code and my unsolicited wisdom";
 
-export const site = "https://joshuakgoldberg.com";
+export const site = "https://katungi.vercel.app";
