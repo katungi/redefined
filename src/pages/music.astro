@@ -1,0 +1,61 @@
+---
+import musicDark from "~/assets/projects-dark.webp";
+import musicLight from "~/assets/projects-light.webp";
+import { Anchor } from "~/components/Anchor";
+import BodyContents from "~/components/BodyContents.astro";
+import HeroTertiary from "~/components/HeroTertiary.astro";
+import { TrackEntry } from "~/components/music/TrackEntry";
+import { getRecentTracks } from "~/lib/spotify";
+
+import HeroLayout from "../layouts/HeroLayout.astro";
+
+const description = "Check out what I've been listening to on Spotify.";
+
+let recentTracks = [];
+
+try {
+  recentTracks = await getRecentTracks();
+} catch (error) {
+  console.error('Error fetching recent tracks:', error);
+}
+---
+
+<HeroLayout
+	alt="Daniel's profile picture"
+	description={description}
+	images={{
+		dark: musicDark,
+		light: musicLight,
+	}}
+	primary="Music"
+	title="Music"
+>
+	<Fragment slot="secondary">
+		{description}
+	</Fragment>
+	<HeroTertiary slot="tertiary">
+		Here are my 5 most recently played tracks on
+		<Anchor href="https://open.spotify.com" target="_blank"> Spotify </Anchor>.
+	</HeroTertiary>
+
+	<BodyContents>
+		<div class="music-list">
+			{recentTracks.map((track) => <TrackEntry client:load track={track} />)}
+		</div>
+	</BodyContents>
+</HeroLayout>
+
+<style>
+	.music-list {
+		margin: 2rem 0;
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+
+	@media (min-width: 700px) {
+		.music-list {
+			margin-top: 3.5rem;
+		}
+	}
+</style>
