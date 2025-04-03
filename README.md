@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-    Personal site for Josh Goldberg.
+    Personal site for Daniel Katungi - based off of Josh Golberg's site.
     Hooray! ✨
 </p>
 

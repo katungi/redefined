@@ -1,6 +1,6 @@
 ---
-import joshDark from "~/assets/josh-dark.webp";
-import joshLight from "~/assets/josh-light.webp";
+import danDark from "~/assets/dan-dark.webp";
+import danLight from "~/assets/dan-light.webp";
 import BodyContents from "~/components/BodyContents.astro";
 import Socials from "~/components/Socials.astro";
 import { Text } from "~/components/Text";
@@ -9,26 +9,33 @@ import HeroLayout from "../layouts/HeroLayout.astro";
 ---
 
 <HeroLayout
-	alt="Josh's half-smiling happy face"
+	alt="Daniel's half-smiling happy face"
 	description="I'm an open source maintainer in the TypeScript ecosystem."
-	images={{ dark: joshDark, light: joshLight }}
-	primary="Hi! I'm Josh."
-	slug="josh"
+	images={{ dark: danDark, light: danLight }}
+	primary="Hi! I'm Daniel."
+	slug="daniel"
 >
 	<Fragment slot="secondary">
-		I'm an open source maintainer in the TypeScript ecosystem.
+		I'm a Typescript enthusiast and open source nerd.
 	</Fragment>
 	<Socials slot="tertiary" />
 	<BodyContents class="about">
 		<Text as="p" fontSize="medium" fontWeight="light">
-			I work to make web development better, most notably on typescript-eslint:
+			I like web and mobile dev, I am into compilers,
 			<br class="tabletUp" />
-			the tooling that enables ESLint and Prettier run on TypeScript code.
+			frameworks, and currently learning Go and Rust (I use Vim BTW) - oh and EffectTs
+			too
 		</Text>
 		<Text as="p" fontSize="medium" fontWeight="light">
-			I’m the author of Learning TypeScript (O’Reilly), a Microsoft MVP,
+			I sometimes stream on <Text
+				as="a"
+				href="twitch.tv/warri0rrapid"
+				rel="noopener"
+				target="_blank"
+			>
+				Twitch
+			</Text>
 			<br class="tabletUp" />
-			an international conference speaker, and a community organizer.
 		</Text>
 	</BodyContents>
 </HeroLayout>
