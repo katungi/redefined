@@ -47,6 +47,6 @@ export async function getRecentTracks(): Promise<Track[]> {
 		trackUrl: item.track.external_urls.spotify,
 	}));
 }
-
 // Replace this with your personal access token from Spotify Developer Dashboard
 const ACCESS_TOKEN = "BQC6wIy_60_XjJCNwv7TzNXyRRAkpiE0oB3AJKjSYBpjqgVB2wownAcu9clMtjcJ7uIjuX1Lom_ic_t0jM0S9FaYgLQaufow7anHCZDRQPXGGlisj4c1aGNBlBRa9hvQhj1vgTga-og";
+

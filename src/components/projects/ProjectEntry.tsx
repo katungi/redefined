@@ -1,4 +1,4 @@
-import type { Project, ProjectBase } from "joshuakgoldberg";
+import type { Project, ProjectBase } from "~/lib/projects";
 
 import { For } from "solid-js";
 
@@ -25,10 +25,10 @@ export function ProjectEntry(props: ProjectEntryProps) {
 			image={
 				props.project.image
 					? {
-							alt: `${projectTitle(props.project)} logo`,
-							src: props.project.image,
-							variant: "square",
-						}
+						alt: `${projectTitle(props.project)} logo`,
+						src: props.project.image,
+						variant: "square",
+					}
 					: undefined
 			}
 			links={[

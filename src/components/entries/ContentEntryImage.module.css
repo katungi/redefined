@@ -14,6 +14,23 @@
 	height: 3.5rem;
 	width: 3.5rem;
 	user-select: none;
+	transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.contentEntryImage.loading {
+	filter: blur(3px);
+	opacity: 0.7;
+}
+
+.contentEntryImage.loaded {
+	filter: none;
+	opacity: 1;
+	animation: fadeIn 0.3s ease;
+}
+
+.contentEntryImage.error {
+	filter: grayscale(100%);
+	opacity: 0.5;
 }
 
 .round {

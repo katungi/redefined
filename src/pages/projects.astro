@@ -1,22 +1,23 @@
 ---
-import { projectCategories } from "joshuakgoldberg";
-
-import projectsDark from "~/assets/projects-dark.webp";
-import projectsLight from "~/assets/projects-light.webp";
+import danDark from "~/assets/dan-dark.webp";
+import danLight from "~/assets/dan-light.webp";
 import { Anchor } from "~/components/Anchor";
 import BodyContents from "~/components/BodyContents.astro";
 import HeroTertiary from "~/components/HeroTertiary.astro";
 import { ProjectsTabbed } from "~/components/projects/ProjectsTabbed";
+import { type Project, projectCategories } from "~/lib/projects";
 
 import HeroLayout from "../layouts/HeroLayout.astro";
 
 const temporaryKeyAliases = new Map([
-	["Biggest Projects", "Biggest"],
-	["Just For Fun", "Shenanigans"],
-	["Tooling", "Dev Tooling"],
+	["Cool Projects", "Cool"],
+	["Dev Tooling", "Dev Tooling"],
+	["Mad Experiments", "Shenanigans"],
+	["Random", "Random"],
+	["Work Projects", "Work"],
 ]);
 
-const categories = {
+const categories: Record<string, Project[]> = {
 	All: Object.values(projectCategories).flatMap(
 		(category) => category.projects,
 	),
@@ -24,22 +25,25 @@ const categories = {
 		Object.entries(projectCategories)
 			.map(
 				([key, category]) =>
-					[temporaryKeyAliases.get(key) ?? key, category.projects] as const,
+					[
+						temporaryKeyAliases.get(key) ?? key,
+						category.projects,
+					] as const,
 			)
 			.sort(([a], [b]) => a.localeCompare(b)),
 	),
 };
 
 const description =
-	"I work primarily on open source tooling for TypeScript projects.";
+	"I work on various projects ranging from mobile apps to web frameworks and dev tools.";
 ---
 
 <HeroLayout
 	alt="Josh smiling and giving a thumbs up at a podium wearing a white shirt with a pineapple pattern"
 	description={description}
 	images={{
-		dark: projectsDark,
-		light: projectsLight,
+		dark: danDark,
+		light: danLight,
 	}}
 	primary="Projects"
 	title="Projects"
@@ -48,10 +52,10 @@ const description =
 		{description}
 	</Fragment>
 	<HeroTertiary slot="tertiary">
-		I also enjoy emojis and other shenanigans.
+		I am a full time mad scientist - experimenting with random stuff
 		<br />
 		Find all these on my <Anchor
-			href="https://github.com/JoshuaKGoldberg"
+			href="https://github.com/katungi"
 			target="_blank"
 		>
 			GitHub profile

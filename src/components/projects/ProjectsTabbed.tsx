@@ -1,4 +1,4 @@
-import type { Project } from "joshuakgoldberg";
+import type { Project } from "~/lib/projects";
 
 import { For } from "solid-js";
 
