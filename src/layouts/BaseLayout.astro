@@ -25,6 +25,11 @@ const { class: className, description, image, title } = Astro.props;
 	<script>
 		document.body.classList.add("javascriptEnabled");
 	</script>
+	<script>
+		import { themeManager } from "~/lib/themeManager";
+		// Ensure theme manager initializes
+		themeManager.getCurrentTheme();
+	</script>
 	<div id="#top"></div>
 	<MainArea as="body" class={className}>
 		<SkipLink />

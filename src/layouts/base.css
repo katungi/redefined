@@ -83,6 +83,9 @@
 		bottom: 0;
 		scrollbar-gutter: stable;
 		width: 100%;
+		transition: 
+			background var(--transitionSlow),
+			color var(--transitionMedium);
 	}
 
 	body,
@@ -94,7 +97,11 @@
 	:link,
 	:visited {
 		color: var(--colorForeground);
-		transition: var(--transitionMedium) color;
+		transition: 
+			var(--transitionMedium) color,
+			var(--transitionMedium) background-color,
+			var(--transitionMedium) border-color,
+			var(--transitionMedium) box-shadow;
 		text-decoration: none;
 	}
 

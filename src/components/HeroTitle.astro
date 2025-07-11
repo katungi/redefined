@@ -1,10 +1,31 @@
 ---
 import { Text } from "./Text";
+import { ColorfulText } from "./ColorfulText";
+
+// Get the content as a string to check if it contains "Daniel"
+const slotContent = Astro.slots.render("default");
+const textContent = await slotContent;
+const containsDaniel = textContent.includes("Daniel");
 ---
 
-<Text as="h1" fontSize="title" fontWeight="bolder">
-	<slot />
-</Text>
+{
+	containsDaniel ? (
+		<Text as="h1" fontSize="title" fontWeight="bolder">
+			Hi! I'm{" "}
+			<ColorfulText
+				text="Daniel"
+				fontSize="title"
+				fontWeight="bolder"
+				client:load
+			/>
+			.
+		</Text>
+	) : (
+		<Text as="h1" fontSize="title" fontWeight="bolder">
+			<slot />
+		</Text>
+	)
+}
 
 <style>
 	h1 {
