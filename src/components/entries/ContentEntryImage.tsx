@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { createSignal, onMount } from "solid-js";
+import { createSignal } from "solid-js";
 
 import styles from "./ContentEntryImage.module.css";
 

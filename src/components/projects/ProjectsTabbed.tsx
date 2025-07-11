@@ -17,7 +17,11 @@ export function ProjectsTabbed(props: ProjectsTabbedProps) {
 			initialCategories={props.categories}
 			renderCategory={(projects) => (
 				<EntryList>
-					<For each={projects.sort((a, b) => a.repo.localeCompare(b.repo))}>
+					<For each={projects.sort((a, b) => {
+						const aName = a.name ?? a.repo ?? "Untitled";
+						const bName = b.name ?? b.repo ?? "Untitled";
+						return aName.localeCompare(bName);
+					})}>
 						{(project) => <ProjectEntry project={project} />}
 					</For>
 				</EntryList>

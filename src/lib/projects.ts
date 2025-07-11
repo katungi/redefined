@@ -10,7 +10,7 @@ export interface ProjectBase {
     description: string;
     name?: string;
     owner?: string;
-    repo: string;
+    repo?: string;
     url?: string;
 }
 
@@ -25,7 +25,7 @@ export const projectCategories: Record<string, ProjectCategory> = {
         projects: [
             {
                 description: "A Cross-platform Terminal Emulator built using Electron",
-                image: "https://github.com/katungi/terminex/raw/main/images/terminex.png",
+                image: "https://github.com/katungi/terminex/raw/main/icons/terminex-dark-square.png",
                 name: "Terminex",
                 owner: "katungi",
                 repo: "terminex",
@@ -34,7 +34,7 @@ export const projectCategories: Record<string, ProjectCategory> = {
             },
             {
                 description: "Google Solution Semi-finalist. A machine learning app that detects eye diseases. Made using Tensorflow and Flutter",
-                image: "https://res.cloudinary.com/dankatdennis2758/image/upload/v1631775385/dtqydxupse0ghxd8tqhj.png",
+                image: "https://eyero.netlify.app/assets/images/Eyero.png",
                 name: "Eyero",
                 repo: "eyero",
                 role: "Creator",
@@ -114,8 +114,9 @@ export const projectCategories: Record<string, ProjectCategory> = {
             {
                 description: "A portfolio website for my friend",
                 name: "Njeri's Portfolio",
+                owner: "katungi",
                 role: "Creator",
-                url: "https://njeri.vercel.app/",
+                url: "https://njeri.vercel.app/"
             }
         ]
     },
@@ -126,56 +127,66 @@ export const projectCategories: Record<string, ProjectCategory> = {
                 description: "Built an app to be a companion for people with OCD (currently in the app store)",
                 image: "https://res.cloudinary.com/dankatdennis2758/image/upload/v1752221548/k7yqzcbqqv56lnisjtys.png",
                 links: {
-                    "App Store": "https://apps.apple.com/us/app/choiceful-ocd-therapy-tools/id6680173049",
-                    "Google Play": "https://play.google.com/store/apps/details?id=com.choiceful.choicefulapp",
                     Site: "https://www.choicefulocd.com/",
                 },
+                name: "Choiceful",
                 owner: "Be Choiceful",
                 role: "Creator",
+                url: "https://www.choicefulocd.com/"
             },
             {
                 description: "I helped build and port the Fashion TV website to a modern stack using Next.js v11",
                 links: {
                     Site: "https://fashiontv.com",
                 },
+                name: "Fashion TV",
                 owner: "katungi",
-                repo: "fashiontv",
                 role: "Contributor",
+                url: "https://fashiontv.com"
             },
             {
-                description: "Jumba Go",
+                description: "Jumba Go - Mobile commerce app",
                 image: "https://play-lh.googleusercontent.com/Gt3ZR4lHFAwJdzRR0DjrGtgkGgNev71xN3xy_70AgGixztfHdxkXkvpbvKmJFbnrd-ml=w240-h480-rw",
                 links: {
-                    "Google Play": "https://play.google.com/store/apps/details?id=com.jumba.gomobile&hl=en&pli=1",
+                    "Google Play": "https://play.google.com/store/apps/details?id=com.jumba.gomobile",
                     Site: "https://jumba.com",
                 },
+                name: "Jumba Go",
                 owner: "jumba.com",
-                repo: "jumba-go",
                 role: "Contributor",
+                url: "https://jumba.com"
             },
             {
-                description: "Uptrends.ai",
+                description: "Uptrends.ai - AI-powered social media analytics platform",
                 image: "https://cdn.prod.website-files.com/652d109ee2cdc35ce4f4d4c4/66953824028e25da32dee624_Uptrends%20Wordmark%20White-p-500.png",
                 links: {
                     Site: "https://uptrends.ai",
                 },
+                name: "Uptrends.ai",
                 owner: "Babbl Labs",
-                role: "Creator"
+                role: "Creator",
+                url: "https://uptrends.ai"
             },
             {
-                description: "Babbl Labs website",
+                description: "Babbl Labs company website",
                 image: "https://cdn.prod.website-files.com/67ae2122069004f6ffae38b6/67deff6c623b0b1d666b35ae_Asset%202%404x-8-p-500.png",
                 links: {
                     Site: "https://babbl-labs.com",
                 },
+                name: "Babbl Labs",
                 owner: "Babbl Labs",
-                role: "Creator"
+                role: "Creator",
+                url: "https://babbl-labs.com"
             },
             {
                 description: "Checkout my LinkedIn for more work stuff",
                 links: {
                     LinkedIn: "https://www.linkedin.com/in/katungi/"
-                }
+                },
+                name: "LinkedIn Profile",
+                owner: "katungi",
+                role: "Professional Profile",
+                url: "https://www.linkedin.com/in/katungi/"
             }
         ]
     },

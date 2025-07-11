@@ -10,29 +10,28 @@ export interface ProjectEntryProps {
 	project: Project;
 }
 
-function projectUrl({ owner = "JoshuaKGoldberg", repo, url }: ProjectBase) {
-	return url ?? `https://github.com/${owner}/${repo}`;
+function projectUrl({ owner = "katungi", repo, url }: ProjectBase) {
+	return url ?? (repo ? `https://github.com/${owner}/${repo}` : "#");
 }
 
 function projectTitle(project: ProjectBase) {
-	return project.name ?? project.repo;
+	return project.name ?? project.repo ?? "Untitled Project";
 }
 
 export function ProjectEntry(props: ProjectEntryProps) {
+	const fallbackImage = "https://www.joshuakgoldberg.com/images/fullscreenmario.png";
+	const projectImage = props.project.image || fallbackImage;
+
 	return (
 		<ContentEntry
 			description={props.project.description}
-			image={
-				props.project.image
-					? {
-						alt: `${projectTitle(props.project)} logo`,
-						src: props.project.image,
-						variant: "square",
-					}
-					: undefined
-			}
+			image={{
+				alt: `${projectTitle(props.project)} logo`,
+				src: projectImage,
+				variant: "square",
+			}}
 			links={[
-				["Repo", projectUrl(props.project)],
+				...(props.project.repo ? [["Repo", projectUrl(props.project)] as [string, string]] : []),
 				...Object.entries(props.project.links ?? []),
 			]}
 			subtitle={props.project.role ?? "Creator & Maintainer"}
