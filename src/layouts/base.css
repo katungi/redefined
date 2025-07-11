@@ -5,6 +5,7 @@
 		--colorBackgroundBottom: #feffff;
 		--colorBackgroundTop: #fdffff;
 		--colorEmphasized: #1170d0;
+		--colorSecondary: #789dc7;
 		--colorForeground: #283556;
 		--colorForegroundExtra: #142842;
 		--colorMedium: #789dc7;
@@ -101,12 +102,26 @@
 			var(--transitionMedium) color,
 			var(--transitionMedium) background-color,
 			var(--transitionMedium) border-color,
-			var(--transitionMedium) box-shadow;
+			var(--transitionMedium) box-shadow,
+			var(--transitionMedium) text-shadow;
 		text-decoration: none;
 	}
 
 	main {
 		position: relative;
+	}
+
+	/* Smooth transitions for themed elements with shadows */
+	h1, h2, h3, h4, h5, h6,
+	[class*="hero"],
+	[class*="squiggly"] {
+		transition: 
+			color var(--transitionMedium),
+			background-color var(--transitionMedium),
+			border-color var(--transitionMedium),
+			box-shadow var(--transitionMedium),
+			text-shadow var(--transitionMedium),
+			filter var(--transitionMedium);
 	}
 
 	html.dark {
@@ -115,6 +130,7 @@
 		--colorBackgroundBottom: #111117;
 		--colorBackgroundTop: #071428;
 		--colorEmphasized: #77bbff;
+		--colorSecondary: #789dc7;
 		--colorForeground: #dae7f3;
 		--colorForegroundExtra: #e5edf3;
 		--colorSubtle: #052438;

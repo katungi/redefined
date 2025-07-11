@@ -76,7 +76,7 @@ export function ColorfulText(props: ColorfulTextProps) {
                 <span
                     class={styles.indicator}
                     style={{
-                        transform: `translateX(${getCurrentThemeIndex() * 100}%)`,
+                        left: `calc(${(100 / 6) * getCurrentThemeIndex()}% + ${(100 / 6) / 2}% - 0.2rem)`,
                         background: getLetterColor(getCurrentThemeIndex())
                     }}
                 />
@@ -95,6 +95,9 @@ export function ColorfulText(props: ColorfulTextProps) {
                             onMouseEnter={() => setHoveredIndex(index())}
                             onMouseLeave={() => setHoveredIndex(null)}
                             onClick={() => letter !== ' ' && handleLetterClick(index())}
+                            // Add touch events for better mobile interaction
+                            onTouchStart={() => setHoveredIndex(index())}
+                            onTouchEnd={() => setHoveredIndex(null)}
                         >
                             {letter === ' ' ? '\u00A0' : letter}
                         </span>

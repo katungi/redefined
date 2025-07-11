@@ -12,20 +12,21 @@
 }
 
 .squiggly:not(.inactive)::after {
-	background: var(--squiggle) repeat-x;
-	background-size: contain;
+	background-color: var(--colorSecondary);
 	content: "";
 	display: block;
 	height: 0.25em;
-	image-rendering: smooth;
 	margin-top: var(--afterMarginTop);
 	opacity: 0;
 	position: absolute;
 	transition:
-		var(--transitionMedium) filter,
 		var(--transitionMedium) opacity,
-		var(--transitionMedium) transform;
+		var(--transitionMedium) background-color;
 	width: 100%;
+	mask: var(--squiggle) repeat-x;
+	mask-size: contain;
+	-webkit-mask: var(--squiggle) repeat-x;
+	-webkit-mask-size: contain;
 }
 
 .squiggly.passive::after {

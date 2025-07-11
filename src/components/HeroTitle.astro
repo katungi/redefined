@@ -10,15 +10,14 @@ const containsDaniel = textContent.includes("Daniel");
 
 {
 	containsDaniel ? (
-		<Text as="h1" fontSize="title" fontWeight="bolder">
-			Hi! I'm{" "}
+		<Text as="h1" fontSize="title" fontWeight="bolder" class="hero-title">
+			<span class="title-text">Hi! I'm </span>
 			<ColorfulText
 				text="Daniel"
 				fontSize="title"
 				fontWeight="bolder"
 				client:load
 			/>
-			.
 		</Text>
 	) : (
 		<Text as="h1" fontSize="title" fontWeight="bolder">
@@ -32,5 +31,19 @@ const containsDaniel = textContent.includes("Daniel");
 		color: var(--colorForegroundExtra);
 		line-height: 0.85;
 		text-shadow: var(--textShadow);
+	}
+
+	.hero-title {
+		display: flex;
+		align-items: baseline;
+		flex-wrap: wrap;
+		gap: 0;
+		will-change: auto;
+		backface-visibility: hidden;
+		transform: translateZ(0);
+	}
+
+	.title-text {
+		white-space: pre;
 	}
 </style>

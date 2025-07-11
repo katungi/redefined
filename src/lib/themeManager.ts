@@ -5,6 +5,7 @@ export const colorThemes = {
             colorBackgroundBottom: '#feffff',
             colorBackgroundTop: '#fdffff',
             colorEmphasized: '#1170d0',
+            colorSecondary: '#789dc7',
             colorForeground: '#283556',
             colorForegroundExtra: '#142842',
             colorMedium: '#789dc7',
@@ -14,6 +15,7 @@ export const colorThemes = {
             colorBackgroundBottom: '#111117',
             colorBackgroundTop: '#071428',
             colorEmphasized: '#77bbff',
+            colorSecondary: '#789dc7',
             colorForeground: '#dae7f3',
             colorForegroundExtra: '#e5edf3',
             colorMedium: '#789dc7',
@@ -25,6 +27,7 @@ export const colorThemes = {
             colorBackgroundBottom: 'oklch(0.9399 0.0203 345.6985)',
             colorBackgroundTop: 'oklch(0.9498 0.0500 86.8891)',
             colorEmphasized: 'oklch(0.6209 0.1801 348.1385)',
+            colorSecondary: 'oklch(0.8095 0.0694 198.1863)',
             colorForeground: 'oklch(0.4712 0 0)',
             colorForegroundExtra: 'oklch(0.3211 0 0)',
             colorMedium: 'oklch(0.5795 0 0)',
@@ -34,6 +37,7 @@ export const colorThemes = {
             colorBackgroundBottom: 'oklch(0.2497 0.0305 234.1628)',
             colorBackgroundTop: 'oklch(0.2902 0.0299 233.5352)',
             colorEmphasized: 'oklch(0.9195 0.0801 87.6670)',
+            colorSecondary: 'oklch(0.7794 0.0803 4.1330)',
             colorForeground: 'oklch(0.9306 0.0197 349.0785)',
             colorForegroundExtra: 'oklch(0.9306 0.0197 349.0785)',
             colorMedium: 'oklch(0.7794 0.0803 4.1330)',
@@ -45,6 +49,7 @@ export const colorThemes = {
             colorBackgroundBottom: 'oklch(0.9578 0.0058 264.5321)',
             colorBackgroundTop: 'oklch(1.0000 0 0)',
             colorEmphasized: 'oklch(0.5547 0.2503 297.0156)',
+            colorSecondary: 'oklch(0.6820 0.1448 235.3822)',
             colorForeground: 'oklch(0.4355 0.0430 279.3250)',
             colorForegroundExtra: 'oklch(0.4355 0.0430 279.3250)',
             colorMedium: 'oklch(0.5471 0.0343 279.0837)',
@@ -54,6 +59,7 @@ export const colorThemes = {
             colorBackgroundBottom: 'oklch(0.2155 0.0254 284.0647)',
             colorBackgroundTop: 'oklch(0.2429 0.0304 283.9110)',
             colorEmphasized: 'oklch(0.7871 0.1187 304.7693)',
+            colorSecondary: 'oklch(0.8467 0.0833 210.2545)',
             colorForeground: 'oklch(0.8787 0.0426 272.2767)',
             colorForegroundExtra: 'oklch(0.8787 0.0426 272.2767)',
             colorMedium: 'oklch(0.7510 0.0396 273.9320)',
@@ -65,6 +71,7 @@ export const colorThemes = {
             colorBackgroundBottom: 'oklch(0.9789 0.0082 121.6272)',
             colorBackgroundTop: 'oklch(1.0000 0 0)',
             colorEmphasized: 'oklch(0.5106 0.2301 276.9656)',
+            colorSecondary: 'oklch(0.7038 0.1230 182.5025)',
             colorForeground: 'oklch(0 0 0)',
             colorForegroundExtra: 'oklch(0 0 0)',
             colorMedium: 'oklch(0.3211 0 0)',
@@ -74,6 +81,7 @@ export const colorThemes = {
             colorBackgroundBottom: 'oklch(0 0 0)',
             colorBackgroundTop: 'oklch(0.2455 0.0217 257.2823)',
             colorEmphasized: 'oklch(0.6801 0.1583 276.9349)',
+            colorSecondary: 'oklch(0.7845 0.1325 181.9120)',
             colorForeground: 'oklch(1.0000 0 0)',
             colorForegroundExtra: 'oklch(1.0000 0 0)',
             colorMedium: 'oklch(0.8452 0 0)',
@@ -85,6 +93,7 @@ export const colorThemes = {
             colorBackgroundBottom: 'oklch(0.9754 0.0084 325.6414)',
             colorBackgroundTop: 'oklch(1.0000 0 0)',
             colorEmphasized: 'oklch(0.5316 0.1409 355.1999)',
+            colorSecondary: 'oklch(0.8696 0.0675 334.8991)',
             colorForeground: 'oklch(0.3257 0.1161 325.0372)',
             colorForegroundExtra: 'oklch(0.3257 0.1161 325.0372)',
             colorMedium: 'oklch(0.4924 0.1244 324.4523)',
@@ -94,6 +103,7 @@ export const colorThemes = {
             colorBackgroundBottom: 'oklch(0.2409 0.0201 307.5346)',
             colorBackgroundTop: 'oklch(0.2803 0.0232 307.5413)',
             colorEmphasized: 'oklch(0.4607 0.1853 4.0994)',
+            colorSecondary: 'oklch(0.3137 0.0306 310.0610)',
             colorForeground: 'oklch(0.8398 0.0387 309.5391)',
             colorForegroundExtra: 'oklch(0.8456 0.0302 341.4597)',
             colorMedium: 'oklch(0.7940 0.0372 307.1032)',
@@ -105,6 +115,7 @@ export const colorThemes = {
             colorBackgroundBottom: 'oklch(0.9900 0 0)',
             colorBackgroundTop: 'oklch(1 0 0)',
             colorEmphasized: 'oklch(0 0 0)',
+            colorSecondary: 'oklch(0.9400 0 0)',
             colorForeground: 'oklch(0 0 0)',
             colorForegroundExtra: 'oklch(0 0 0)',
             colorMedium: 'oklch(0.4400 0 0)',
@@ -114,6 +125,7 @@ export const colorThemes = {
             colorBackgroundBottom: 'oklch(0 0 0)',
             colorBackgroundTop: 'oklch(0.1400 0 0)',
             colorEmphasized: 'oklch(1 0 0)',
+            colorSecondary: 'oklch(0.2500 0 0)',
             colorForeground: 'oklch(1 0 0)',
             colorForegroundExtra: 'oklch(1 0 0)',
             colorMedium: 'oklch(0.7200 0 0)',
@@ -187,6 +199,9 @@ export class ThemeManager {
         Object.entries(themeColors).forEach(([key, value]) => {
             root.style.setProperty(`--${key}`, value);
         });
+
+        // Update derived CSS variables that depend on theme colors
+        root.style.setProperty('--textShadow', `3px 3px 1px ${themeColors.colorSubtle}`);
     }
 
     getCurrentTheme(): ThemeName {

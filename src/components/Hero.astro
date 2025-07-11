@@ -12,7 +12,11 @@ interface Props {
 
 <div class:list={["hero", Astro.props.class]}>
 	<div class="half first">
-		<HeroImage alt={Astro.props.alt} size="large" src={Astro.props.images} />
+		<HeroImage
+			alt={Astro.props.alt}
+			size="large"
+			src={Astro.props.images}
+		/>
 	</div>
 	<div class="half second">
 		<HeroTitle>
@@ -29,6 +33,8 @@ interface Props {
 		position: relative;
 		width: var(--widthFull);
 		max-width: 100%;
+		will-change: auto;
+		backface-visibility: hidden;
 	}
 
 	.first {
@@ -63,6 +69,7 @@ interface Props {
 			align-items: flex-start;
 			justify-content: center;
 			width: 55%;
+			min-height: 0;
 		}
 	}
 </style>
