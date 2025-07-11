@@ -111,13 +111,13 @@ export const projectCategories: Record<string, ProjectCategory> = {
                 role: "Creator",
                 url: "https://how-many-days-gamma.vercel.app"
             },
-            {
-                description: "A portfolio website for my friend",
-                name: "Njeri's Portfolio",
-                owner: "katungi",
-                role: "Creator",
-                url: "https://njeri.vercel.app/"
-            }
+            // {
+            //     description: "A portfolio website for my friend",
+            //     name: "Njeri's Portfolio",
+            //     owner: "katungi",
+            //     role: "Creator",
+            //     url: "https://njeri.vercel.app/"
+            // }
         ]
     },
     "Work Projects": {
