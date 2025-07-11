@@ -149,12 +149,12 @@ export const projectCategories: Record<string, ProjectCategory> = {
                 image: "https://play-lh.googleusercontent.com/Gt3ZR4lHFAwJdzRR0DjrGtgkGgNev71xN3xy_70AgGixztfHdxkXkvpbvKmJFbnrd-ml=w240-h480-rw",
                 links: {
                     "Google Play": "https://play.google.com/store/apps/details?id=com.jumba.gomobile",
-                    Site: "https://jumba.com",
+                    Site: "https://www.jumba.com/",
                 },
                 name: "Jumba Go",
                 owner: "jumba.com",
                 role: "Contributor",
-                url: "https://jumba.com"
+                url: "https://www.jumba.com/"
             },
             {
                 description: "Uptrends.ai - AI-powered social media analytics platform",
