@@ -66,26 +66,26 @@ export const colorThemes = {
             colorSubtle: 'oklch(0.2973 0.0294 276.2144)',
         }
     },
-    softpop: {
+    nature: {
         light: {
-            colorBackgroundBottom: 'oklch(0.9789 0.0082 121.6272)',
-            colorBackgroundTop: 'oklch(1.0000 0 0)',
-            colorEmphasized: 'oklch(0.5106 0.2301 276.9656)',
-            colorSecondary: 'oklch(0.7038 0.1230 182.5025)',
-            colorForeground: 'oklch(0 0 0)',
-            colorForegroundExtra: 'oklch(0 0 0)',
-            colorMedium: 'oklch(0.3211 0 0)',
-            colorSubtle: 'oklch(0.9551 0 0)',
+            colorBackgroundBottom: 'oklch(0.9711 0.0074 80.7211)',
+            colorBackgroundTop: 'oklch(0.9711 0.0074 80.7211)',
+            colorEmphasized: 'oklch(0.5234 0.1347 144.1672)',
+            colorSecondary: 'oklch(0.9571 0.0210 147.6360)',
+            colorForeground: 'oklch(0.3000 0.0358 30.2042)',
+            colorForegroundExtra: 'oklch(0.3000 0.0358 30.2042)',
+            colorMedium: 'oklch(0.4495 0.0486 39.2110)',
+            colorSubtle: 'oklch(0.9370 0.0142 74.4218)',
         },
         dark: {
-            colorBackgroundBottom: 'oklch(0 0 0)',
-            colorBackgroundTop: 'oklch(0.2455 0.0217 257.2823)',
-            colorEmphasized: 'oklch(0.6801 0.1583 276.9349)',
-            colorSecondary: 'oklch(0.7845 0.1325 181.9120)',
-            colorForeground: 'oklch(1.0000 0 0)',
-            colorForegroundExtra: 'oklch(1.0000 0 0)',
-            colorMedium: 'oklch(0.8452 0 0)',
-            colorSubtle: 'oklch(0.3211 0 0)',
+            colorBackgroundBottom: 'oklch(0.2683 0.0279 150.7681)',
+            colorBackgroundTop: 'oklch(0.3327 0.0271 146.9867)',
+            colorEmphasized: 'oklch(0.6731 0.1624 144.2083)',
+            colorSecondary: 'oklch(0.3942 0.0265 142.9926)',
+            colorForeground: 'oklch(0.9423 0.0097 72.6595)',
+            colorForegroundExtra: 'oklch(0.9423 0.0097 72.6595)',
+            colorMedium: 'oklch(0.8579 0.0174 76.0955)',
+            colorSubtle: 'oklch(0.3327 0.0271 146.9867)',
         }
     },
     t3: {

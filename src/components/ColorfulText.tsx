@@ -15,7 +15,7 @@ export function ColorfulText(props: ColorfulTextProps) {
     const [hoveredIndex, setHoveredIndex] = createSignal<number | null>(null);
 
     // Map each letter to a theme - "Daniel" = 6 letters, 6 themes
-    const letterThemeMap: ThemeName[] = ['default', 'bubblegum', 'catpuccin', 'softpop', 't3', 'vercel'];
+    const letterThemeMap: ThemeName[] = ['default', 'bubblegum', 'catpuccin', 'nature', 't3', 'vercel'];
 
     const handleThemeChange = (theme: ThemeName, mode: 'light' | 'dark') => {
         setCurrentTheme(theme);
@@ -89,8 +89,7 @@ export function ColorfulText(props: ColorfulTextProps) {
                                 color: letter === ' ' ? 'transparent' : getLetterColor(index()),
                                 cursor: letter === ' ' ? 'default' : 'pointer',
                                 transform: hoveredIndex() === index() ? 'scale(1.1) translateY(-2px)' : 'scale(1)',
-                                'text-shadow': hoveredIndex() === index() ? '0 0 20px currentColor' :
-                                    getCurrentThemeIndex() === index() ? '0 2px 8px currentColor' : 'none'
+                                'text-shadow': hoveredIndex() === index() ? '0 0 20px currentColor' : 'none'
                             }}
                             onMouseEnter={() => setHoveredIndex(index())}
                             onMouseLeave={() => setHoveredIndex(null)}
