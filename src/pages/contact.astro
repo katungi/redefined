@@ -1,0 +1,85 @@
+---
+import danDark from "~/assets/dan-dark.webp";
+import danLight from "~/assets/dan-light.webp";
+import BodyContents from "~/components/BodyContents.astro";
+import { Text } from "~/components/Text";
+
+import HeroLayout from "../layouts/HeroLayout.astro";
+---
+
+<HeroLayout
+	alt="Daniel's contact information"
+	description="Get in touch with Daniel Katungi - available for collaboration, consulting, and coffee chats in Nairobi."
+	images={{ dark: danDark, light: danLight }}
+	primary="Let's Connect"
+	slug="contact"
+	title="Contact"
+>
+	<Fragment slot="secondary">
+		Available for collaboration, consulting, and coffee chats
+	</Fragment>
+	<BodyContents class="contact-info">
+		<div class="contact-section">
+			<Text as="p" fontSize="medium" fontWeight="light">
+				If you are in Nairobi, and want to go for a walk/ get a beer/
+				work on something ...
+			</Text>
+			<Text
+				as="p"
+				fontSize="medium"
+				fontWeight="medium"
+				class="contact-detail"
+			>
+				dankatdennis@gmail.com
+			</Text>
+		</div>
+		<div class="contact-section">
+			<Text as="p" fontSize="medium" fontWeight="light">
+				Alternatively, you can call me ... But not at weird hours... My
+				cat doesn't like that
+			</Text>
+			<Text
+				as="p"
+				fontSize="medium"
+				fontWeight="medium"
+				class="contact-detail"
+			>
+				tel: +254711305307
+			</Text>
+		</div>
+	</BodyContents>
+</HeroLayout>
+
+<style>
+	.contact-info {
+		display: flex;
+		gap: 2.5rem;
+		flex-direction: column;
+		margin: 2rem 0 1rem;
+	}
+
+	.contact-section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.contact-detail {
+		font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace;
+		background-color: var(--colorSubtle);
+		padding: 0.5rem 1rem;
+		border-radius: 0.25rem;
+		border-left: 3px solid var(--colorAccent);
+	}
+
+	@media (min-width: 700px) {
+		.contact-info {
+			margin-top: 3.5rem;
+			text-align: center;
+		}
+
+		.contact-section {
+			align-items: center;
+		}
+	}
+</style>
