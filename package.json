@@ -34,6 +34,7 @@
 		"@konami-emoji-blast/astro": "^0.1.1",
 		"@types/eslint-plugin-jsx-a11y": "^6.10.0",
 		"@types/eslint-plugin-markdown": "^2.0.2",
+		"@vercel/analytics": "^1.5.0",
 		"accessible-astro-components": "^4.0.3",
 		"astro": "^5.4.2",
 		"cached-factory": "^0.1.0",

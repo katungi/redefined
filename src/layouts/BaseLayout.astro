@@ -1,5 +1,6 @@
 ---
 import "@fontsource-variable/league-spartan";
+import Analytics from "@vercel/analytics/astro";
 import { SkipLink } from "accessible-astro-components";
 
 import Footer from "~/components/Footer.astro";
@@ -40,4 +41,5 @@ const { class: className, description, image, title } = Astro.props;
 		</main>
 		<Footer />
 	</MainArea>
+	<Analytics />
 </html>
